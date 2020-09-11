@@ -1,8 +1,10 @@
 const cheerio = require('cheerio');
 const request = require('request');
 const { DownloaderHelper } = require('node-downloader-helper');
+const fs = require('fs');
 
 const URL = 'https://memegen.link/examples';
+!fs.existsSync(`./memes`) && fs.mkdirSync(`./memes`, { recursive: true });
 
 request(URL, function (err, resp, html) {
   //If there is no error
@@ -31,7 +33,7 @@ request(URL, function (err, resp, html) {
       //dowload the images
       let dl = '';
       for (let i = 0; i < returnInfo.length; i++) {
-        dl = new DownloaderHelper(returnInfo[i], __dirname);
+        dl = new DownloaderHelper(returnInfo[i], './memes');
         //dl.on('end', () => console.log('Download Completed'));
         dl.start();
         //console.log(dl);
