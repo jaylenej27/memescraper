@@ -1,15 +1,20 @@
-## Memescraper
+# Memescraper
 
-# node.js meme scraper/downloader
+## node.js meme scraper/downloader
 
-Created in Sept 2020 by Jenna Koelbl
+Created in Sept 2020 by _Jenna Koelbl_
 
-Scraping program to download memes from any url site.
+**Scraping program to download memes from any url site.**
 
-Scans website of provided url and pulls the info of the first 10 images on the site.
-Takes those 10 links and downloads them into meme file
-Uses 3 libraries: cheerio, request, node-download-helper
+- Scans website of provided url and pulls the info of the first 10 images on the site.
+- Takes those 10 links and downloads them into meme file
+- Uses 3 imported libraries: cheerio, request, node-download-helper
 
-Run code in terminal: node index.js
+Run code in terminal: `node index.js`
 
-##REPL:
+###REPL:
+https://repl.it/@jaylenej27/memescraper#.replit
+
+#### Screenshot
+
+<img src="./ssscrape.jpg" alt="screeenshot of opening code" />

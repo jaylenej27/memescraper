@@ -1,0 +1,8 @@
+{
+  "name": "memescraper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jaylenej27/memescraper.git",
+  "author": "Jennifer Koelbl <jaylenej27@gmail.com>",
+  "license": "MIT"
+}
