@@ -3,7 +3,10 @@ const request = require('request');
 const { DownloaderHelper } = require('node-downloader-helper');
 const fs = require('fs');
 
+//page to scan
 const URL = 'https://memegen.link/examples';
+
+//create folder if doens't exist
 !fs.existsSync(`./memes`) && fs.mkdirSync(`./memes`, { recursive: true });
 
 request(URL, function (err, resp, html) {
