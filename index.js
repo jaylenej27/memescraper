@@ -17,13 +17,13 @@ request(URL, function (err, resp, html) {
     const $ = cheerio.load(html);
 
     //Save embeded urls
-    let returnInfo = [];
+    const returnInfo = [];
 
     //Treverse the webpage and select the media elements
     $('img').each(function (i, element) {
       //only pull first 10 items
       if (i < 10) {
-        let temp = $(element).attr('src'); //Create a reference for the image element was this
+        const temp = $(element).attr('src'); //Create a reference for the image element was this
         returnInfo.push('https://memegen.link' + temp); //Add the URL address to the return info array
       }
     });

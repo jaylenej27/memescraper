@@ -12,9 +12,16 @@ Created in Sept 2020 by _Jenna Koelbl_
 
 Run code in terminal: `node index.js`
 
-###REPL:
+### REPL:
+
 https://repl.it/@jaylenej27/memescraper#.replit
 
 #### Screenshot
 
-<img src="./ssscrape.jpg" alt="screeenshot of opening code" />
+<img src="./ssscrape.png" alt="screenshot of opening code" />
+
+## Libraries
+
+https://cheerio.js.org/
+https://github.com/request/request
+https://www.npmjs.com/package/node-downloader-helper
