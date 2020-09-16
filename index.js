@@ -34,7 +34,6 @@ request(URL, function (err, resp, html) {
       console.log('Downloading first 10 memes');
 
       //dowload the images
-      let dl = '';
       for (let i = 0; i < returnInfo.length; i++) {
         dl = new DownloaderHelper(returnInfo[i], './memes');
         //dl.on('end', () => console.log('Download Completed'));
