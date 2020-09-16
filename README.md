@@ -23,5 +23,7 @@ https://repl.it/@jaylenej27/memescraper#.replit
 ## Libraries
 
 https://cheerio.js.org/
+
 https://github.com/request/request
+
 https://www.npmjs.com/package/node-downloader-helper
