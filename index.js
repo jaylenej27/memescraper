@@ -35,10 +35,9 @@ request(URL, function (err, resp, html) {
 
       //dowload the images
       for (let i = 0; i < returnInfo.length; i++) {
-        dl = new DownloaderHelper(returnInfo[i], './memes');
-        //dl.on('end', () => console.log('Download Completed'));
+        const dl = new DownloaderHelper(returnInfo[i], './memes');
+        //dl.on('end', () => console.log('Download Completed')); to announce ea dl
         dl.start();
-        //console.log(dl);
 
         //learned new option from Hamed
         //   returnInfo.map(item =>
