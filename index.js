@@ -36,7 +36,7 @@ request(URL, function (err, resp, html) {
       //dowload the images
       for (let i = 0; i < returnInfo.length; i++) {
         const dl = new DownloaderHelper(returnInfo[i], './memes');
-        //dl.on('end', () => console.log('Download Completed')); to announce ea dl
+        // dl.on('end', () => console.log('Download Completed')); *for ea DL
         dl.start();
 
         //learned new option from Hamed
@@ -44,8 +44,10 @@ request(URL, function (err, resp, html) {
         //     {const dl = new DownloaderHelper(item, __dirname);
         //       dl.on('end', () => console.log('Download Completed'));
         //     })
+
+        dl.on('end', () => console.log('Download Completed'));
       }
-      dl.on('end', () => console.log('Download Completed'));
+      
     } catch (e) {
       //Output the error
       console.log('Error in the output process: ' + e);
